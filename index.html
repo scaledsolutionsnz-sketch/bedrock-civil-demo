@@ -97,15 +97,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(18,21,26,
 .btn-solid:hover{background:#dd8f47}
 .btn-ghost{border:1px solid rgba(232,229,222,.35);color:var(--text-dark);background:rgba(18,21,26,.25)}
 .btn-ghost:hover{border-color:var(--text-dark)}
-.hero-quote{margin-top:40px;max-width:430px;background:rgba(24,28,34,.5);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line-dark);border-radius:var(--radius);padding:18px 22px;opacity:0;transform:translateY(22px)}
+.hero-quote{margin-top:40px;max-width:430px;background:rgba(17,20,25,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line-dark);border-radius:var(--radius);padding:18px 22px;opacity:0;transform:translateY(22px)}
 .hq-stars{display:flex;gap:3px;color:var(--accent);margin-bottom:8px}
 .hq-stars svg{width:14px;height:14px}
 .hq-body{position:relative;min-height:76px}
 .hq-item{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
 .hq-item.on{opacity:1}
-.hq-item p{font-size:.94rem;line-height:1.55;color:var(--text-dark)}
-.hq-item cite{display:block;margin-top:6px;font-style:normal;font-size:.82rem;color:var(--text-dark-soft)}
-.hq-tag{margin-top:10px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dark-soft)}
+.hq-item p{font-size:.94rem;line-height:1.55;color:#f2f0ea}
+.hq-item cite{display:block;margin-top:6px;font-style:normal;font-size:.82rem;color:#c9ccd1}
+.hq-tag{margin-top:10px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#c9ccd1}
 
 /* ---------- sections ---------- */
 section{padding:96px 0}
@@ -155,7 +155,7 @@ section{padding:96px 0}
 .crew-role{margin-top:4px;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .crew-card p{margin-top:12px;font-size:.93rem;color:var(--text-dark-soft)}
 .badge{display:inline-block;margin-top:14px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dark-soft);border:1px solid var(--line-dark);border-radius:999px;padding:5px 14px}
-#crew .badge{margin-top:0;margin-bottom:22px}
+#crew .badge{margin-top:18px}
 @media(max-width:860px){.crew-grid{grid-template-columns:1fr;max-width:420px}}
 
 /* reviews */
@@ -216,7 +216,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
 .foot-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--line-dark);border-radius:10px;color:var(--text-dark-soft);transition:color .25s,border-color .25s}
 .foot-social a:hover{color:var(--accent);border-color:var(--accent)}
 .foot-social svg{width:17px;height:17px}
-.foot-note{margin-top:22px;font-size:.84rem;text-align:center;width:100%}
+.foot-note{margin-top:22px;font-size:.84rem;text-align:center;width:100%;max-width:70ch;margin-left:auto;margin-right:auto}
 
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
@@ -375,9 +375,9 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
 <section id="crew" class="dark">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="badge">Example team</span>
       <h2>Who turns up</h2>
       <p>Small crew, short chain of command. The person you call is the person on the job.</p>
+      <span class="badge">Example team</span>
     </div>
     <div class="crew-grid">
       <article class="crew-card reveal">
