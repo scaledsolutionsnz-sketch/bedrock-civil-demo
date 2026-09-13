@@ -8,8 +8,8 @@
 <meta property="og:title" content="Bedrock Civil | Earthworks &amp; Drainage, Paraparaumu">
 <meta property="og:description" content="Site cuts, trenches, driveways and retaining across the Kāpiti Coast. Based in Paraparaumu.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1649807479468-40011b31ee09?auto=format&fit=crop&w=1200&q=70">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2312151a'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' fill='%23cf8038' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://bedrock-civil-demo.vercel.app/images/project-01.webp">
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
@@ -79,7 +79,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(18,21,26,
 .hero-slide.on{opacity:1}
 .hero-slide img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05)}
 .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,21,26,.62) 0%,rgba(18,21,26,.42) 45%,rgba(18,21,26,.88) 100%)}
-.hero-inner{position:relative;z-index:2;width:100%;padding:150px 0 72px}
+.hero-inner{position:relative;z-index:2;width:100%;padding:150px 24px 72px}
 .hero-eyebrow{font-family:var(--display);font-size:.85rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;opacity:0;transform:translateY(18px)}
 .hero h1{font-size:clamp(2.5rem,6vw,4.4rem);font-weight:600;max-width:15ch;color:#f5f3ee;opacity:0;transform:translateY(22px)}
 .hero-sub{margin-top:20px;max-width:46ch;font-size:1.08rem;color:var(--text-dark-soft);opacity:0;transform:translateY(22px)}
@@ -224,18 +224,25 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
   .reveal{opacity:1;transform:none}
   .hero-eyebrow,.hero h1,.hero-sub,.hero-ctas,.hero-quote{opacity:1 !important;transform:none !important}
 }
+
+/* Supplied branding and project photography */
+.logo{display:flex;align-items:center;gap:14px;letter-spacing:.1em}.brand-image{width:66px;height:66px;object-fit:contain;flex:none}.logo .brand-name{color:var(--text-dark);font-size:.95rem}.nav{height:82px}.foot .brand-image{width:112px;height:112px}#intro .brand-image{width:210px;height:210px}.about-photo img{height:auto}.hero-slide img{object-position:center}.hero-slide:nth-child(3) img{object-position:center 58%}section[id]{scroll-margin-top:82px}
+#projects{background:var(--bone)}.project-eyebrow{font-size:.8rem!important;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-deep)!important;margin-bottom:15px}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 24px}.project-card{min-width:0}.project-link{position:relative;display:block;overflow:hidden;border-radius:var(--radius);background:var(--ink)}.project-link>img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform .5s var(--ease)}.project-link:hover>img{transform:scale(1.035)}.project-open{position:absolute;bottom:12px;right:12px;display:flex;align-items:center;gap:10px;background:rgba(18,21,26,.85);color:white;backdrop-filter:blur(8px);padding:8px 12px;border:1px solid #ffffff30;border-radius:7px;font-size:.78rem}.project-open svg{width:16px;height:16px}.project-card figcaption{display:flex;gap:12px;margin-top:14px;font-size:.92rem;line-height:1.5}.project-card figcaption>span{color:var(--accent-deep);font-size:.8rem;font-variant-numeric:tabular-nums;padding-top:2px}.project-link:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+#projectViewer{position:fixed;inset:0;margin:auto;width:min(1100px,96vw);max-width:96vw;height:90dvh;max-height:90dvh;padding:16px 20px;background:#12151a;color:#f2f0ea;border:1px solid #ffffff30;border-radius:14px}#projectViewer::backdrop{background:#080a0dee;backdrop-filter:blur(8px)}.viewer-bar{height:48px;display:flex;align-items:center;justify-content:space-between;font-variant-numeric:tabular-nums}#projectViewer button{min-width:48px;min-height:48px;border:1px solid #ffffff40;background:#20262f;color:white;border-radius:8px;cursor:pointer;font:inherit}#closeViewer{display:flex;align-items:center;gap:14px;padding:0 15px}.viewer-stage{height:calc(100% - 110px);position:relative;display:flex;align-items:center;justify-content:center;margin-top:12px}#viewerImage{width:100%;height:100%;object-fit:contain}#previousPhoto,#nextPhoto{position:absolute;top:50%;transform:translateY(-50%);font-size:2rem!important}#previousPhoto{left:8px}#nextPhoto{right:8px}#photoCaption{padding-top:15px;text-align:center;font-size:.95rem;line-height:1.4}
+@media(max-width:1000px){.logo .brand-name{display:none}.nav-links{gap:22px}}
+@media(max-width:700px){.project-grid{grid-template-columns:1fr;gap:28px}.nav{height:76px;gap:12px}.nav-phone{margin-left:auto;padding:0 13px}.brand-image{width:64px;height:64px}.hero-inner{padding-top:115px}.hero{padding-top:0;padding-bottom:0}.hero-inner{padding-bottom:50px}.hero-quote{margin-top:26px}.hq-body{min-height:110px}.hero-eyebrow{font-size:.7rem}.hero h1{font-size:2.2rem}.hero-ctas{gap:10px}.hero-ctas .btn{padding:0 18px}section{padding:68px 0}.sec-head{margin-bottom:34px}#projectViewer{padding:10px;width:96vw}.viewer-stage{height:calc(100% - 125px)}#photoCaption{font-size:.85rem}.foot-links{flex-wrap:wrap}}
 </style>
 </head>
 <body>
 
-<div id="intro" aria-hidden="true"><div class="mark">Bedrock <span>Civil</span></div></div>
+<div id="intro" aria-hidden="true"><div class="mark"><img class="brand-image" src="images/bedrock-civil-logo.webp" alt="Bedrock Civil" width="96" height="96"></div></div>
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top">Bedrock <span>Civil</span></a>
+    <a class="logo" href="#top"><img class="brand-image" src="images/bedrock-civil-logo.webp" alt="Bedrock Civil" width="96" height="96"><span class="brand-name">Bedrock Civil</span></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -250,6 +257,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
   <nav id="mobileMenu">
     <a href="#services">Services</a>
     <a href="#about">About</a>
+    <a href="#projects">Projects</a>
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
     <a href="tel:+64277772713">Call 027 777 2713</a>
@@ -261,9 +269,9 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-slides" aria-hidden="true">
-    <div class="hero-slide on"><img src="https://images.unsplash.com/photo-1649807479468-40011b31ee09?auto=format&fit=crop&w=1800&q=78" alt="Excavator working a ridge line at first light with dust in the air" fetchpriority="high"></div>
-    <div class="hero-slide"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://images.unsplash.com/photo-1628645419184-26a1f2757340?auto=format&fit=crop&w=1800&q=78" alt="Excavator shaping an earth cut on a sloped site" loading="lazy"></div>
-    <div class="hero-slide"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://images.unsplash.com/photo-1610477865545-37711c53144d?auto=format&fit=crop&w=1800&q=78" alt="Earthmoving machinery lined up on a work site" loading="lazy"></div>
+    <div class="hero-slide on"><img src="images/project-01.webp" alt="Tiered timber retaining walls by Bedrock Civil" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="images/project-04.webp" alt="Landscaped beds beside a new home by Bedrock Civil" loading="lazy"></div>
+    <div class="hero-slide"><img src="images/project-12.webp" alt="Timber access ramp and handrails by Bedrock Civil" loading="lazy"></div>
   </div>
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="wrap hero-inner">
@@ -300,7 +308,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
     </div>
     <div class="svc-grid">
       <article class="svc-card reveal">
-        <figure><img src="https://images.unsplash.com/photo-1606811883055-0d24f05c8bcd?auto=format&fit=crop&w=900&q=72" alt="Aerial view of an excavator cutting a building platform" loading="lazy" width="900" height="506"></figure>
+        <figure><img src="images/project-09.webp" alt="Excavator clearing a residential section by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V9l7-5 9 6v10"/></svg>Groundwork</span>
           <h3>Earthworks and site cuts</h3>
@@ -308,7 +316,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
         </div>
       </article>
       <article class="svc-card reveal">
-        <figure><img src="https://images.unsplash.com/photo-1565364507085-325347bae748?auto=format&fit=crop&w=900&q=72" alt="Excavator working above an open pipe trench" loading="lazy" width="900" height="506"></figure>
+        <figure><img src="images/project-02.webp" alt="Excavation beside a house by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4.5 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-6.5 6-11z"/></svg>Water</span>
           <h3>Trenching and drainage</h3>
@@ -316,7 +324,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
         </div>
       </article>
       <article class="svc-card reveal">
-        <figure><img src="https://images.unsplash.com/photo-1622082679766-c5912d9416eb?auto=format&fit=crop&w=900&q=72" alt="Excavator bucket digging out a foundation" loading="lazy" width="900" height="506"></figure>
+        <figure><img src="images/project-05.webp" alt="Retaining walls and prepared ground by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="10" rx="1"/><path d="M7 10V6h10v4"/></svg>Foundations</span>
           <h3>Foundation digs and footings</h3>
@@ -324,7 +332,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
         </div>
       </article>
       <article class="svc-card reveal">
-        <figure><img src="https://images.unsplash.com/photo-1660720063275-02b8aa6e63eb?auto=format&fit=crop&w=900&q=72" alt="Fresh gravel metal spread for a driveway" loading="lazy" width="900" height="506"></figure>
+        <figure><img src="images/project-08.webp" alt="Retaining wall beside a driveway by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21l4-18"/><path d="M20 21L16 3"/><path d="M12 7v2"/><path d="M12 13v2"/><path d="M12 19v2"/></svg>Access</span>
           <h3>Driveways and metalling</h3>
@@ -332,7 +340,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
         </div>
       </article>
       <article class="svc-card reveal">
-        <figure><img src="https://images.unsplash.com/photo-1646297970360-94c9f6d8903c?auto=format&fit=crop&w=900&q=72" alt="Wheel loader levelling a sandy section" loading="lazy" width="900" height="506"></figure>
+        <figure><img src="images/project-06.webp" alt="Gravel landscaping with timber edging by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M6 17l3-8 4 5 3-4 2 7"/></svg>Sections</span>
           <h3>Section clearing and levelling</h3>
@@ -340,7 +348,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
         </div>
       </article>
       <article class="svc-card reveal">
-        <figure><img src="https://images.unsplash.com/photo-1580901368855-059c4792ff22?auto=format&fit=crop&w=900&q=72" alt="Excavator placing rock on a graded slope" loading="lazy" width="900" height="506"></figure>
+        <figure><img src="images/project-01.webp" alt="Tiered timber retaining walls by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="6" rx="1"/><rect x="13" y="4" width="8" height="6" rx="1"/><rect x="8" y="14" width="8" height="6" rx="1"/></svg>Slopes</span>
           <h3>Retaining and rock work</h3>
@@ -355,7 +363,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
 <section id="about">
   <div class="wrap about-grid">
     <div class="about-photo reveal">
-      <img src="https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=1000&q=72" alt="Aerial view of a benched earthworks site with excavators working" loading="lazy" width="1000" height="750">
+      <img src="images/project-09.webp" alt="Excavator clearing a residential section by Bedrock Civil" loading="lazy" width="1000" height="750">
       <span class="about-tag">Paraparaumu based</span>
     </div>
     <div class="about-copy reveal">
@@ -371,6 +379,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
   </div>
 </section>
 
+<section id="projects"><div class="wrap"><div class="sec-head reveal"><p class="project-eyebrow">Our work</p><h2>From the first cut to the finishing touches.</h2><p>Retaining walls, earthworks, timber steps and outdoor spaces. Explore 15 photos of Bedrock Civil’s work.</p></div><div class="project-grid"><figure class="project-card reveal"><a href="images/project-01.webp" class="project-link" data-project="0" aria-label="View photo 1: Tiered timber retaining walls"><img src="images/project-01-thumb.webp" alt="Tiered timber retaining walls by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>01</span>Tiered timber retaining walls</figcaption></figure><figure class="project-card reveal"><a href="images/project-02.webp" class="project-link" data-project="1" aria-label="View photo 2: Excavation beside a house"><img src="images/project-02-thumb.webp" alt="Excavation beside a house by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>02</span>Excavation beside a house</figcaption></figure><figure class="project-card reveal"><a href="images/project-03.webp" class="project-link" data-project="2" aria-label="View photo 3: Timber seating around a gravel courtyard"><img src="images/project-03-thumb.webp" alt="Timber seating around a gravel courtyard by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>03</span>Timber seating around a gravel courtyard</figcaption></figure><figure class="project-card reveal"><a href="images/project-04.webp" class="project-link" data-project="3" aria-label="View photo 4: Landscaped beds beside a new home"><img src="images/project-04-thumb.webp" alt="Landscaped beds beside a new home by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>04</span>Landscaped beds beside a new home</figcaption></figure><figure class="project-card reveal"><a href="images/project-05.webp" class="project-link" data-project="4" aria-label="View photo 5: Retaining walls and prepared ground"><img src="images/project-05-thumb.webp" alt="Retaining walls and prepared ground by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>05</span>Retaining walls and prepared ground</figcaption></figure><figure class="project-card reveal"><a href="images/project-06.webp" class="project-link" data-project="5" aria-label="View photo 6: Gravel landscaping with timber edging"><img src="images/project-06-thumb.webp" alt="Gravel landscaping with timber edging by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>06</span>Gravel landscaping with timber edging</figcaption></figure><figure class="project-card reveal"><a href="images/project-07.webp" class="project-link" data-project="6" aria-label="View photo 7: Timber-framed gravel garden path"><img src="images/project-07-thumb.webp" alt="Timber-framed gravel garden path by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>07</span>Timber-framed gravel garden path</figcaption></figure><figure class="project-card reveal"><a href="images/project-08.webp" class="project-link" data-project="7" aria-label="View photo 8: Retaining wall beside a driveway"><img src="images/project-08-thumb.webp" alt="Retaining wall beside a driveway by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>08</span>Retaining wall beside a driveway</figcaption></figure><figure class="project-card reveal"><a href="images/project-09.webp" class="project-link" data-project="8" aria-label="View photo 9: Excavator clearing a residential section"><img src="images/project-09-thumb.webp" alt="Excavator clearing a residential section by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>09</span>Excavator clearing a residential section</figcaption></figure><figure class="project-card reveal"><a href="images/project-10.webp" class="project-link" data-project="9" aria-label="View photo 10: Wide timber entrance steps"><img src="images/project-10-thumb.webp" alt="Wide timber entrance steps by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>10</span>Wide timber entrance steps</figcaption></figure><figure class="project-card reveal"><a href="images/project-11.webp" class="project-link" data-project="10" aria-label="View photo 11: Completed driveway retaining wall"><img src="images/project-11-thumb.webp" alt="Completed driveway retaining wall by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>11</span>Completed driveway retaining wall</figcaption></figure><figure class="project-card reveal"><a href="images/project-12.webp" class="project-link" data-project="11" aria-label="View photo 12: Timber access ramp and handrails"><img src="images/project-12-thumb.webp" alt="Timber access ramp and handrails by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>12</span>Timber access ramp and handrails</figcaption></figure><figure class="project-card reveal"><a href="images/project-13.webp" class="project-link" data-project="12" aria-label="View photo 13: Garden steps beside a boundary fence"><img src="images/project-13-thumb.webp" alt="Garden steps beside a boundary fence by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>13</span>Garden steps beside a boundary fence</figcaption></figure><figure class="project-card reveal"><a href="images/project-14.webp" class="project-link" data-project="13" aria-label="View photo 14: Timber stairway alongside a house"><img src="images/project-14-thumb.webp" alt="Timber stairway alongside a house by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>14</span>Timber stairway alongside a house</figcaption></figure><figure class="project-card reveal"><a href="images/project-15.webp" class="project-link" data-project="14" aria-label="View photo 15: Timber steps and landing through a garden"><img src="images/project-15-thumb.webp" alt="Timber steps and landing through a garden by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>15</span>Timber steps and landing through a garden</figcaption></figure></div></div></section>
 <!-- CREW -->
 <section id="crew" class="dark">
   <div class="wrap">
@@ -443,7 +452,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
 
 <!-- REVIEW BANNER -->
 <section id="leave-review">
-  <div class="bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1637669886956-bf0e1cc4f0d3?auto=format&fit=crop&w=1600&q=70" alt="" loading="lazy"></div>
+  <div class="bg" aria-hidden="true"><img src="images/project-04.webp" alt="Landscaped beds beside a new home by Bedrock Civil" loading="lazy"></div>
   <div class="wrap banner-inner">
     <div class="reveal">
       <h2>Happy with our work? Leave us a review</h2>
@@ -509,7 +518,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
 
 <footer>
   <div class="wrap foot">
-    <span class="logo">Bedrock <span>Civil</span></span>
+    <a class="logo" href="#top"><img class="brand-image" src="images/bedrock-civil-logo.webp" alt="Bedrock Civil" width="96" height="96"></a>
     <nav class="foot-links">
       <a href="terms.html">Terms &amp; Conditions</a>
       <a href="privacy.html">Privacy Policy</a>
@@ -526,6 +535,7 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
   </div>
 </footer>
 
+<dialog id="projectViewer" aria-label="Project photo viewer"><div class="viewer-bar"><p id="photoCount"></p><button type="button" id="closeViewer" aria-label="Close photo viewer">Close <span aria-hidden="true">×</span></button></div><div class="viewer-stage"><img id="viewerImage" alt=""><button type="button" id="previousPhoto" aria-label="Previous photo">‹</button><button type="button" id="nextPhoto" aria-label="Next photo">›</button></div><p id="photoCaption"></p></dialog>
 <script>
 (function(){
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -535,6 +545,18 @@ footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid va
   function killIntro(){ intro.classList.add('gone'); document.body.classList.add('loaded'); }
   if (reduced) { killIntro(); }
   else { window.setTimeout(killIntro, 1100); }
+
+
+  var projectNames = ["Tiered timber retaining walls", "Excavation beside a house", "Timber seating around a gravel courtyard", "Landscaped beds beside a new home", "Retaining walls and prepared ground", "Gravel landscaping with timber edging", "Timber-framed gravel garden path", "Retaining wall beside a driveway", "Excavator clearing a residential section", "Wide timber entrance steps", "Completed driveway retaining wall", "Timber access ramp and handrails", "Garden steps beside a boundary fence", "Timber stairway alongside a house", "Timber steps and landing through a garden"];
+  var viewer=document.getElementById('projectViewer'), viewerImage=document.getElementById('viewerImage'), selectedPhoto=0;
+  function showPhoto(index){selectedPhoto=(index+projectNames.length)%projectNames.length;viewerImage.src='images/project-'+String(selectedPhoto+1).padStart(2,'0')+'.webp';viewerImage.alt=projectNames[selectedPhoto]+' by Bedrock Civil';document.getElementById('photoCount').textContent=String(selectedPhoto+1).padStart(2,'0')+' / '+projectNames.length;document.getElementById('photoCaption').textContent=projectNames[selectedPhoto];}
+  document.querySelectorAll('.project-link').forEach(function(a){a.addEventListener('click',function(e){if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();showPhoto(Number(a.dataset.project));viewer.showModal();document.body.style.overflow='hidden';});});
+  document.getElementById('closeViewer').addEventListener('click',function(){viewer.close();});
+  viewer.addEventListener('close',function(){document.body.style.overflow='';});
+  viewer.addEventListener('click',function(e){if(e.target===viewer)viewer.close();});
+  document.getElementById('previousPhoto').addEventListener('click',function(){showPhoto(selectedPhoto-1);});
+  document.getElementById('nextPhoto').addEventListener('click',function(){showPhoto(selectedPhoto+1);});
+  viewer.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();showPhoto(selectedPhoto+1);}if(e.key==='ArrowLeft'){e.preventDefault();showPhoto(selectedPhoto-1);}});
 
   // year
   document.getElementById('yr').textContent = new Date().getFullYear();
