@@ -1,639 +1,592 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bedrock Civil | Earthworks &amp; Drainage, Paraparaumu</title>
-<meta name="description" content="Bedrock Civil handles earthworks, drainage, trenching, driveways and retaining across the Kāpiti Coast. Based in Paraparaumu. Call Art for a quote.">
-<meta property="og:title" content="Bedrock Civil | Earthworks &amp; Drainage, Paraparaumu">
-<meta property="og:description" content="Site cuts, trenches, driveways and retaining across the Kāpiti Coast. Based in Paraparaumu.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://bedrock-civil-demo.vercel.app/images/project-01.webp">
-<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="robots" content="noindex">
+<title>Bedrock Civil | Earthworks &amp; Civil, Paraparaumu</title>
+<meta name="description" content="Earthworks, excavation, drainage and site prep across Paraparaumu and the Kāpiti Coast. Owner-operated. Call Art for a quote.">
+<meta property="og:title" content="Bedrock Civil | Earthworks &amp; Civil, Paraparaumu">
+<meta property="og:description" content="Earthworks, excavation, drainage and site prep across Paraparaumu and the Kāpiti Coast.">
+<meta property="og:image" content="https://bedrock-civil-demo.vercel.app/img/og.jpg">
+<link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-1-1920.webp" fetchpriority="high">
+<script>document.documentElement.classList.add('js')</script>
 <style>
 :root{
-  --ink:#2b1b14;
-  --ink-2:#38241b;
-  --ink-3:#493126;
-  --bone:#eee3d5;
-  --paper:#faf6ef;
-  --accent:#c49975;
-  --accent-deep:#805337;
-  --text-dark:#f2e8dc;
-  --text-dark-soft:#ccbaaa;
-  --text-light:#302219;
-  --text-light-soft:#6b5748;
-  --line-dark:rgba(242,232,220,.12);
-  --line-light:rgba(48,34,25,.12);
-  --radius:14px;
-  --display:'Schibsted Grotesk',sans-serif;
-  --body:'Golos Text',sans-serif;
-  --ease:cubic-bezier(.16,1,.3,1);
+  --accent:#703b24;          /* Bedrock Civil logo brown */
+  --accent-dark:#572d1b;
+  --accent-text:#d08a5a;     /* lightened rust for text accents on dark */
+  --char:#17120e;            /* darkest anchor, warm black like the logo field */
+  --char-2:#201913;          /* dark band */
+  --char-3:#2b221a;          /* raised dark surface */
+  --bone:#efe9e2;            /* light band */
+  --ink:#17120e;
+  --muted:#a89d93;
+  --muted-dark:#5f564d;
+  --line:rgba(255,255,255,.1);
+  --display:'Anton', Impact, sans-serif;
+  --body:'Figtree', Arial, sans-serif;
 }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--body);font-size:16px;line-height:1.7;color:var(--text-light);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block;image-orientation:from-image}
-a{color:inherit;text-decoration:none}
-::selection{background:var(--accent);color:#16110a}
-h1,h2,h3{font-family:var(--display);line-height:1.12;letter-spacing:-.02em}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:#e9e4de;background:var(--char);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block;image-orientation:from-image}
+a{color:var(--accent-text)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.98;margin:0 0 .45em;font-weight:400;letter-spacing:.015em}
+h2{font-size:clamp(2.3rem,6vw,4.4rem)}
+h3{font-size:1.6rem}
+p{margin:0 0 1em}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+section{padding:100px 0;position:relative}
+.band-dark{background:var(--char-2)}
+.band-light{background:var(--bone);color:var(--ink)}
+.band-light .muted{color:var(--muted-dark)}
+.muted{color:var(--muted)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:.95rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-text);margin-bottom:16px}
+.band-light .eyebrow{color:var(--accent)}
+.eyebrow::before{content:"";width:28px;height:3px;background:currentColor}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:48px}
+.section-head h2{margin:0;max-width:760px}
+.section-head p{max-width:380px;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;font-family:var(--display);font-size:1.1rem;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#fff;color:var(--ink);transform:translateY(-2px)}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+:focus-visible{outline:3px solid var(--accent-text);outline-offset:3px}
+.icon{width:26px;height:26px;flex:none}
 
-/* ---------- intro overlay ---------- */
-#intro{position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;align-items:center;justify-content:center;transition:opacity .7s var(--ease),visibility .7s}
-#intro .mark{font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,4vw,2.2rem);color:var(--text-dark);letter-spacing:.14em;text-transform:uppercase;opacity:0;transform:translateY(14px);animation:introIn .8s var(--ease) .15s forwards}
-#intro .mark span{color:var(--accent)}
-#intro.gone{opacity:0;visibility:hidden}
-@keyframes introIn{to{opacity:1;transform:none}}
-
-/* ---------- nav ---------- */
-header{position:fixed;top:0;left:0;right:0;z-index:100;background:#000;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-dark)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dark)}
-.logo span{color:var(--accent)}
-.nav-links{display:flex;align-items:center;gap:30px;list-style:none}
-.nav-links a{color:var(--text-dark-soft);font-size:.95rem;font-weight:500;transition:color .25s}
-.nav-links a:hover{color:var(--text-dark)}
-.nav-phone{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 18px;border:1px solid var(--line-dark);border-radius:999px;color:var(--text-dark);font-weight:600;font-size:.92rem;line-height:1;transition:border-color .25s,background .25s}
-.nav-phone:hover{border-color:var(--accent);background:rgba(196,153,117,.08)}
-.nav-phone svg{width:15px;height:15px;flex:none}
-#navToggle{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--text-dark);align-items:center;justify-content:center}
-#navToggle svg{width:26px;height:26px}
-#mobileMenu{display:none}
-@media(max-width:820px){
-  .nav-links{display:none}
-  #navToggle{display:inline-flex}
-  #mobileMenu{display:block;max-height:0;overflow:hidden;transition:max-height .45s var(--ease);background:#000}
-  #mobileMenu.open{max-height:360px;border-top:1px solid var(--line-dark)}
-  #mobileMenu a{display:flex;align-items:center;min-height:52px;padding:0 24px;color:var(--text-dark);font-weight:500;border-bottom:1px solid var(--line-dark)}
-  #mobileMenu a:last-child{border-bottom:0;color:var(--accent);font-weight:600}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;color:#fff;transition:background .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:92px;transition:height .3s}
+.nav.scrolled{background:rgba(23,18,14,.96);box-shadow:0 1px 0 var(--line)}
+.nav.scrolled .wrap{height:66px}
+.logo{display:flex;align-items:center;color:#fff;text-decoration:none}
+.logo img{height:58px;width:auto;transition:height .3s}
+.nav.scrolled .logo img{height:44px}
+.nav-links{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a{color:#fff;text-decoration:none;font-family:var(--display);font-size:1.02rem;letter-spacing:.12em;text-transform:uppercase;position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent-text);transition:width .25s}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-call{min-height:46px;padding:8px 18px;font-size:1rem}
+.burger{display:none;background:none;border:0;color:#fff;width:46px;height:46px;padding:10px;cursor:pointer}
+@media (max-width:960px){
+  .burger{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--char);padding:8px 20px 24px;border-top:3px solid var(--accent)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav-call .label{display:none}
 }
+@media (max-width:420px){.logo img{height:46px}.nav.scrolled .logo img{height:40px}}
 
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:100dvh;display:flex;align-items:flex-end;background:var(--ink);color:var(--text-dark);overflow:hidden}
+/* HERO */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--char);overflow:hidden;padding:150px 0 70px}
 .hero-slides{position:absolute;inset:0}
-.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
-.hero-slide.on{opacity:1}
-.hero-slide img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05)}
-.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,27,20,.62) 0%,rgba(43,27,20,.42) 45%,rgba(43,27,20,.88) 100%)}
-.hero-inner{position:relative;z-index:2;width:100%;padding:150px 24px 72px}
-.hero-eyebrow{font-family:var(--display);font-size:.85rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;opacity:0;transform:translateY(18px)}
-.hero h1{font-size:clamp(2.5rem,6vw,4.4rem);font-weight:600;max-width:15ch;color:#f5f3ee;opacity:0;transform:translateY(22px)}
-.hero-sub{margin-top:20px;max-width:46ch;font-size:1.08rem;color:var(--text-dark-soft);opacity:0;transform:translateY(22px)}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;opacity:0;transform:translateY(22px)}
-.loaded .hero-eyebrow,.loaded .hero h1,.loaded .hero-sub,.loaded .hero-ctas,.loaded .hero-quote{animation:rise .9s var(--ease) forwards}
-.loaded .hero h1{animation-delay:.12s}
-.loaded .hero-sub{animation-delay:.24s}
-.loaded .hero-ctas{animation-delay:.36s}
-.loaded .hero-quote{animation-delay:.5s}
-@keyframes rise{to{opacity:1;transform:none}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:var(--radius);font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:.01em;transition:transform .25s var(--ease),background .25s,border-color .25s;cursor:pointer;border:0}
-.btn:active{transform:scale(.98)}
-.btn svg{width:17px;height:17px;flex:none}
-.btn-solid{background:var(--accent);color:#171006}
-.btn-solid:hover{background:#d3ae8b}
-.btn-ghost{border:1px solid rgba(242,232,220,.35);color:var(--text-dark);background:rgba(43,27,20,.25)}
-.btn-ghost:hover{border-color:var(--text-dark)}
-.hero-quote{margin-top:40px;max-width:430px;background:rgba(43,27,20,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line-dark);border-radius:var(--radius);padding:18px 22px;opacity:0;transform:translateY(22px)}
-.hq-stars{display:flex;gap:3px;color:var(--accent);margin-bottom:8px}
-.hq-stars svg{width:14px;height:14px}
-.hq-body{position:relative;min-height:76px}
-.hq-item{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
-.hq-item.on{opacity:1}
-.hq-item p{font-size:.94rem;line-height:1.55;color:#eee3d5}
-.hq-item cite{display:block;margin-top:6px;font-style:normal;font-size:.82rem;color:#d7c5b5}
-.hq-tag{margin-top:10px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#d7c5b5}
+.hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.02);transition:opacity 1.6s ease;filter:saturate(.78) contrast(1.08)}
+.hero-slides img.active{opacity:1;animation:kenburns 8s ease-out forwards}
+@keyframes kenburns{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.13) translate(-1.5%,-1%)}}
+.hero.paused .hero-slides img.active{animation-play-state:paused}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,18,14,.85) 0%,rgba(23,18,14,.5) 55%,rgba(23,18,14,.3)),linear-gradient(0deg,rgba(23,18,14,.92),transparent 45%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(2.9rem,9.5vw,8rem);margin-bottom:22px}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.05em}
+.hero h1 .line span{display:block}
+.hero h1 .hl{color:var(--accent-text)}
+.js .hero h1 .line span{transform:translateY(105%);animation:lineUp .9s cubic-bezier(.2,.8,.2,1) forwards}
+.js .hero h1 .line:nth-child(2) span{animation-delay:.15s}
+.js .hero h1 .line:nth-child(3) span{animation-delay:.3s}
+@keyframes lineUp{to{transform:translateY(0)}}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.hero p.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:#e0dad2;max-width:560px;margin:0}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
+.js .hero-fade{opacity:0;animation:fadeIn .8s ease .6s forwards}
+@keyframes fadeIn{to{opacity:1}}
+.rating{display:inline-flex;align-items:center;gap:14px;padding:14px 20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.rating .num{font-family:var(--display);font-size:2.4rem;line-height:1}
+.stars{color:var(--accent-text);letter-spacing:2px}
+.rating small{display:block;color:#d5cec6;font-size:.85rem}
+.hero-controls{display:flex;align-items:center;gap:14px;margin-top:30px}
+.slide-dots{display:flex;gap:8px}
+.slide-dots span{width:40px;height:3px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+.slide-dots span.on::after{content:"";position:absolute;inset:0;background:var(--accent-text);animation:dot 6s linear forwards;transform-origin:left}
+.hero.paused .slide-dots span.on::after{animation-play-state:paused}
+@keyframes dot{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.slide-toggle{width:44px;height:44px;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;cursor:pointer;transition:background .2s}
+.slide-toggle:hover{background:rgba(255,255,255,.25)}
+.slide-toggle svg{width:16px;height:16px}
 
-/* ---------- sections ---------- */
-section{padding:96px 0}
-.sec-head{max-width:640px;margin-bottom:56px}
-.sec-head h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:600}
-.sec-head p{margin-top:14px;color:var(--text-light-soft);font-size:1.05rem}
-.dark .sec-head p{color:var(--text-dark-soft)}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
-.reveal.in{opacity:1;transform:none}
+/* TRUST STRIP */
+.trust{padding:0;background:var(--accent);color:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust-item{display:flex;gap:14px;align-items:center;padding:26px 24px}
+.trust-item+.trust-item{border-left:2px solid rgba(0,0,0,.18)}
+.trust-item strong{display:block;font-family:var(--display);font-weight:400;font-size:1.4rem;text-transform:uppercase;letter-spacing:.03em;line-height:1.1}
+.trust-item span{font-size:.95rem;font-weight:500;color:#f3e4d8}
+@media (max-width:800px){.trust-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:2px solid rgba(0,0,0,.18)}}
 
-/* services */
-#services{background:var(--bone)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.svc-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-light);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
-.svc-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(43,27,20,.35)}
-.svc-card figure{aspect-ratio:16/9;overflow:hidden}
-.svc-card figure img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05);transition:transform .6s var(--ease)}
-.svc-card:hover figure img{transform:scale(1.05)}
-.svc-body{padding:22px 24px 26px}
-.svc-label{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-deep)}
-.svc-label svg{width:14px;height:14px}
-.svc-body h3{margin-top:10px;font-size:1.25rem;font-weight:600}
-.svc-body p{margin-top:8px;font-size:.95rem;color:var(--text-light-soft)}
-@media(max-width:980px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.svc-grid{grid-template-columns:1fr}}
+/* SERVICES */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:340px;gap:6px}
+.tile{position:relative;overflow:hidden;color:#fff;text-decoration:none;display:flex;align-items:flex-end;background:var(--char-3)}
+.tile.wide{grid-column:span 2}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(1.08);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(23,18,14,.92) 0%,rgba(23,18,14,.35) 55%,rgba(23,18,14,.15));transition:background .4s}
+.tile:hover img{transform:scale(1.08)}
+.tile-body{position:relative;z-index:2;padding:28px}
+.tile .num{font-family:var(--display);color:var(--accent-text);letter-spacing:.15em;font-size:1rem;text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.tile h3{font-size:2rem;margin:4px 0 6px}
+.tile p{margin:0;color:#d9d3cb;max-width:420px;font-size:.98rem}
+@media (max-width:900px){.tiles{grid-template-columns:1fr 1fr;grid-auto-rows:300px}.tile.wide{grid-column:span 2}}
+@media (max-width:600px){.tiles{grid-template-columns:1fr;grid-auto-rows:280px}.tile.wide{grid-column:auto}}
 
-/* about */
-#about{background:var(--paper)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.about-photo{position:relative}
-.about-photo img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--radius);filter:saturate(.85) contrast(1.05)}
-.about-tag{position:absolute;left:0;bottom:-16px;background:var(--ink);color:var(--text-dark);font-family:var(--display);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:12px 20px;border-radius:10px}
-.about-copy h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:600}
-.about-copy p{margin-top:18px;color:var(--text-light-soft)}
-.about-list{list-style:none;margin-top:26px;display:grid;gap:14px}
-.about-list li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
-.about-list svg{width:20px;height:20px;flex:none;color:var(--accent-deep);margin-top:4px}
-@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:44px}}
+/* GALLERY (masonry, natural ratios) */
+.masonry{column-count:3;column-gap:8px}
+.masonry figure{margin:0 0 8px;break-inside:avoid;position:relative;overflow:hidden;background:var(--char-3)}
+.masonry img{width:100%;height:auto;display:block;filter:saturate(.78) contrast(1.08);transition:transform .7s ease}
+.masonry figure:hover img{transform:scale(1.05)}
+.masonry figcaption{position:absolute;left:0;bottom:0;padding:10px 14px;background:rgba(23,18,14,.85);font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:.95rem;color:#fff}
+@media (max-width:900px){.masonry{column-count:2}}
+@media (max-width:520px){.masonry{column-count:1}}
 
-/* crew */
-#crew{background:var(--ink);color:var(--text-dark)}
-.crew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.crew-card{background:var(--ink-2);border:1px solid var(--line-dark);border-radius:var(--radius);padding:34px 28px;text-align:center;transition:transform .35s var(--ease),border-color .35s}
-.crew-card:hover{transform:translateY(-5px);border-color:rgba(196,153,117,.5)}
-.avatar{width:84px;height:84px;margin:0 auto 18px;border-radius:50%;background:var(--ink-3);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:1.6rem;color:var(--text-dark)}
-.crew-card h3{font-size:1.15rem;font-weight:600}
-.crew-role{margin-top:4px;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
-.crew-card p{margin-top:12px;font-size:.93rem;color:var(--text-dark-soft)}
-.badge{display:inline-block;margin-top:14px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dark-soft);border:1px solid var(--line-dark);border-radius:999px;padding:5px 14px}
-#crew .badge{margin-top:18px}
-@media(max-width:860px){.crew-grid{grid-template-columns:1fr;max-width:420px}}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.78) contrast(1.08)}
+.corner-tag{position:absolute;left:-1px;bottom:-1px;background:var(--accent);color:#fff;padding:18px 22px;font-family:var(--display);font-size:1.25rem;text-transform:uppercase;letter-spacing:.06em;line-height:1.15}
+.checklist{list-style:none;padding:0;margin:26px 0 0}
+.checklist li{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.12);font-weight:600;font-size:1.05rem}
+.checklist .icon{color:#fff;background:var(--accent);padding:4px;width:28px;height:28px}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}.about-img img{aspect-ratio:4/3}}
 
-/* reviews */
-#reviews{background:var(--bone)}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.rev-card{background:#fff;border:1px solid var(--line-light);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
-.rev-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px -20px rgba(43,27,20,.4)}
-.rev-stars{display:flex;gap:3px;color:var(--accent-deep)}
-.rev-stars svg{width:16px;height:16px}
-.rev-card blockquote{margin-top:16px;font-size:.98rem;color:var(--text-light);flex:1}
-.rev-card cite{margin-top:18px;font-style:normal;font-weight:600;font-size:.92rem}
-.rev-card cite span{display:block;font-weight:400;font-size:.82rem;color:var(--text-light-soft)}
-.rev-note{margin-top:18px;font-size:.85rem;color:var(--text-light-soft)}
-.rev-actions{margin-top:36px}
-.btn-dark{background:var(--ink);color:var(--text-dark)}
-.btn-dark:hover{background:var(--ink-3)}
-@media(max-width:860px){.rev-grid{grid-template-columns:1fr}}
+/* STATS BAND */
+.parallax{padding:0;height:560px;overflow:hidden;display:flex;align-items:center;color:#fff}
+.parallax .bg{position:absolute;left:0;right:0;top:-20%;height:140%;background:url('img/band-2560.webp') center/cover no-repeat;filter:saturate(.7) contrast(1.08);will-change:transform}
+.parallax::after{content:"";position:absolute;inset:0;background:rgba(23,18,14,.68)}
+.parallax .wrap{position:relative;z-index:2;width:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.stat .n{font-family:var(--display);font-size:clamp(3.4rem,8.5vw,6.4rem);line-height:.9;color:#fff}
+.stat .n em{font-style:normal;color:var(--accent-text)}
+.stat p{font-family:var(--display);text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;color:#e0d8cf;margin:8px 0 0}
+@media (max-width:700px){.parallax{height:auto;padding:90px 0}.stats{grid-template-columns:1fr;gap:34px}}
 
-/* review banner */
-#leave-review{position:relative;background:var(--ink);color:var(--text-dark);padding:84px 0;overflow:hidden}
-#leave-review .bg{position:absolute;inset:0}
-#leave-review .bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.05)}
-#leave-review .bg::after{content:"";position:absolute;inset:0;background:rgba(43,27,20,.82)}
-.banner-inner{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.banner-inner h2{font-size:clamp(1.7rem,3.4vw,2.3rem);font-weight:600;max-width:20ch}
-.banner-inner p{margin-top:10px;color:var(--text-dark-soft);max-width:44ch}
+/* TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.team-card{background:#fff;padding:36px 28px;border-top:4px solid var(--accent)}
+.avatar{width:84px;height:84px;background:var(--char);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:2rem;margin-bottom:20px;box-shadow:6px 6px 0 var(--accent)}
+.team-card h3{color:var(--ink)}
+.team-card p{margin:0;color:var(--muted-dark)}
+.team-card.cta-card{background:var(--char-3);border-top-color:var(--accent-text);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px}
+.team-card.cta-card h3{color:#fff}
+.team-card.cta-card p{color:var(--muted)}
+@media (max-width:800px){.team-grid{grid-template-columns:1fr}}
 
-/* contact */
-#contact{background:var(--ink-2);color:var(--text-dark)}
-.contact-card{display:grid;grid-template-columns:1fr 1fr;background:var(--ink);border:1px solid var(--line-dark);border-radius:var(--radius);overflow:hidden}
-.contact-map{min-height:460px}
-.contact-map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.25) contrast(1.05)}
-.contact-info{padding:44px 42px;display:flex;flex-direction:column;gap:14px}
-.contact-info h2{font-size:clamp(1.7rem,3vw,2.2rem);font-weight:600;margin-bottom:6px}
-.contact-info>p{color:var(--text-dark-soft);margin-bottom:10px}
-.contact-btns{display:grid;gap:12px;margin-bottom:16px}
-.contact-btns .btn{width:100%}
-.c-row{display:flex;align-items:center;gap:14px;padding:10px 0;border-top:1px solid var(--line-dark);font-size:.96rem}
-.c-row svg{width:18px;height:18px;flex:none;color:var(--accent)}
-.c-row a:hover{color:var(--accent)}
-.socials{display:flex;gap:12px;margin-top:16px}
-.socials a{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--line-dark);border-radius:12px;color:var(--text-dark);transition:border-color .25s,color .25s,transform .25s var(--ease)}
-.socials a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
-.socials svg{width:19px;height:19px}
-@media(max-width:900px){
-  .contact-card{grid-template-columns:1fr}
-  .contact-map{order:2;min-height:320px}
-  .contact-info{order:1;padding:34px 26px}
-}
+/* REVIEWS */
+.reviews-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:6px}
+.review{background:var(--char-3);padding:38px 34px;display:flex;flex-direction:column;gap:14px;position:relative}
+.review::before{content:"\201C";position:absolute;right:24px;top:0;font-family:var(--display);font-size:7rem;line-height:1;color:var(--accent-text);opacity:.25}
+.review p{margin:0;flex:1;font-size:1.3rem;line-height:1.5}
+.review footer{font-size:.92rem;color:var(--muted)}
+.review footer strong{color:#fff;display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:1.1rem}
+.review-side{background:var(--char-3);padding:38px 34px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.review-side .big{font-family:var(--display);font-size:3.6rem;line-height:1;color:#fff}
+@media (max-width:900px){.reviews-grid{grid-template-columns:1fr}}
 
-/* footer */
-footer{background:var(--ink);color:var(--text-dark-soft);border-top:1px solid var(--line-dark);padding:44px 0}
-.foot{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.foot .logo{font-size:.95rem}
-.foot-links{display:flex;gap:24px;font-size:.9rem}
-.foot-links a:hover{color:var(--text-dark)}
-.foot-social{display:flex;gap:10px}
-.foot-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--line-dark);border-radius:10px;color:var(--text-dark-soft);transition:color .25s,border-color .25s}
-.foot-social a:hover{color:var(--accent);border-color:var(--accent)}
-.foot-social svg{width:17px;height:17px}
-.foot-note{margin-top:22px;font-size:.84rem;text-align:center;width:100%;max-width:70ch;margin-left:auto;margin-right:auto}
+/* LEAVE A REVIEW */
+.review-banner{background:var(--accent);color:#fff;padding:60px 0}
+.review-banner .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.review-banner h2{margin:0;font-size:clamp(2rem,5vw,3.4rem)}
+.review-banner p{margin:6px 0 0;font-weight:500;color:#f3e4d8}
+.review-banner .btn{background:var(--char);color:#fff}
+.review-banner .btn:hover{background:#fff;color:var(--ink)}
 
-@media (prefers-reduced-motion: reduce){
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}
+.faq-list details{border-bottom:1px solid rgba(0,0,0,.15)}
+.faq-list details:first-child{border-top:1px solid rgba(0,0,0,.15)}
+.faq-list summary{list-style:none;cursor:pointer;padding:22px 50px 22px 0;font-family:var(--display);font-size:1.35rem;text-transform:uppercase;letter-spacing:.02em;position:relative;min-height:44px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;border-right:3px solid var(--accent);border-bottom:3px solid var(--accent);transform:translateY(-70%) rotate(45deg);transition:transform .3s}
+.faq-list details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq-list details p{padding:0 0 22px;margin:0;color:var(--muted-dark)}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:20px}}
+
+/* CONTACT */
+.contact{background:var(--char)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact-rows{list-style:none;padding:0;margin:28px 0}
+.contact-rows li{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+.contact-rows .icon{color:var(--accent-text)}
+.contact-rows a{color:#fff;text-decoration:none}
+.contact-actions{display:flex;flex-direction:column;gap:10px}
+.contact-actions .btn{min-height:96px;font-size:1.5rem;justify-content:space-between;padding:20px 30px}
+.contact-actions .btn svg{width:30px;height:30px}
+.socials{display:flex;gap:8px}
+.socials a{width:46px;height:46px;display:grid;place-items:center;background:var(--char-3);color:#fff;transition:background .2s,color .2s}
+.socials a:hover{background:var(--accent);color:#fff}
+.socials svg{width:20px;height:20px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr;gap:40px}.contact-actions .btn{min-height:80px;font-size:1.25rem}}
+
+/* MAP */
+.map{padding:0;background:var(--char)}
+.map iframe{width:100%;height:440px;border:0;display:block;filter:grayscale(.55) contrast(1.05)}
+
+/* FOOTER */
+.footer{background:#100c09;color:#948b82;padding:40px 0;font-size:.95rem;border-top:3px solid var(--accent)}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:center}
+.footer a{color:#d4cdc5;text-decoration:none}
+.footer a:hover{color:var(--accent-text)}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-logo img{height:40px;width:auto}
+
+/* SCROLL REVEALS */
+.js .reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .wipe>img{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s cubic-bezier(.77,0,.18,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .wipe-up>img{clip-path:inset(100% 0 0 0);transition:clip-path 1s cubic-bezier(.77,0,.18,1),transform .7s ease}
+.js .wipe.in>img,.js .wipe-up.in>img{clip-path:inset(0 0 0 0)}
+
+@media (max-width:600px){section{padding:70px 0}.map iframe{height:320px}.section-head{margin-bottom:34px}}
+
+@media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
-  .reveal{opacity:1;transform:none}
-  .hero-eyebrow,.hero h1,.hero-sub,.hero-ctas,.hero-quote{opacity:1 !important;transform:none !important}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .js .wipe>img,.js .wipe-up>img{clip-path:none}
+  .js .hero h1 .line span{transform:none}
+  .js .hero-fade{opacity:1}
+  .hero-slides img.active{transform:none}
+  .parallax .bg{transform:none!important}
 }
-
-/* Supplied branding and project photography */
-.logo{display:flex;align-items:center;gap:14px;letter-spacing:.1em}.brand-image{width:66px;height:66px;object-fit:contain;flex:none}.logo .brand-name{color:var(--text-dark);font-size:.95rem}.nav{height:82px}.foot .brand-image{width:112px;height:112px}#intro .brand-image{width:210px;height:210px}.about-photo img{height:auto}.hero-slide img{object-position:center}.hero-slide:nth-child(3) img{object-position:center 58%}section[id]{scroll-margin-top:82px}
-#projects{background:var(--bone)}.project-eyebrow{font-size:.8rem!important;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-deep)!important;margin-bottom:15px}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 24px}.project-card{min-width:0}.project-link{position:relative;display:block;overflow:hidden;border-radius:var(--radius);background:var(--ink)}.project-link>img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform .5s var(--ease)}.project-link:hover>img{transform:scale(1.035)}.project-open{position:absolute;bottom:12px;right:12px;display:flex;align-items:center;gap:10px;background:rgba(43,27,20,.85);color:white;backdrop-filter:blur(8px);padding:8px 12px;border:1px solid #ffffff30;border-radius:7px;font-size:.78rem}.project-open svg{width:16px;height:16px}.project-card figcaption{display:flex;gap:12px;margin-top:14px;font-size:.92rem;line-height:1.5}.project-card figcaption>span{color:var(--accent-deep);font-size:.8rem;font-variant-numeric:tabular-nums;padding-top:2px}.project-link:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
-#projectViewer{position:fixed;inset:0;margin:auto;width:min(1100px,96vw);max-width:96vw;height:90dvh;max-height:90dvh;padding:16px 20px;background:#2b1b14;color:#eee3d5;border:1px solid #ffffff30;border-radius:14px}#projectViewer::backdrop{background:#160e0aee;backdrop-filter:blur(8px)}.viewer-bar{height:48px;display:flex;align-items:center;justify-content:space-between;font-variant-numeric:tabular-nums}#projectViewer button{min-width:48px;min-height:48px;border:1px solid #ffffff40;background:#493126;color:white;border-radius:8px;cursor:pointer;font:inherit}#closeViewer{display:flex;align-items:center;gap:14px;padding:0 15px}.viewer-stage{height:calc(100% - 110px);position:relative;display:flex;align-items:center;justify-content:center;margin-top:12px}#viewerImage{width:100%;height:100%;object-fit:contain}#previousPhoto,#nextPhoto{position:absolute;top:50%;transform:translateY(-50%);font-size:2rem!important}#previousPhoto{left:8px}#nextPhoto{right:8px}#photoCaption{padding-top:15px;text-align:center;font-size:.95rem;line-height:1.4}
-@media(max-width:1000px){.logo .brand-name{display:none}.nav-links{gap:22px}}
-@media(max-width:700px){.project-grid{grid-template-columns:1fr;gap:28px}.nav{height:76px;gap:12px}.nav-phone{margin-left:auto;padding:0 13px}.brand-image{width:64px;height:64px}.hero-inner{padding-top:115px}.hero{padding-top:0;padding-bottom:0}.hero-inner{padding-bottom:50px}.hero-quote{margin-top:26px}.hq-body{min-height:110px}.hero-eyebrow{font-size:.7rem}.hero h1{font-size:2.2rem}.hero-ctas{gap:10px}.hero-ctas .btn{padding:0 18px}section{padding:68px 0}.sec-head{margin-bottom:34px}#projectViewer{padding:10px;width:96vw}.viewer-stage{height:calc(100% - 125px)}#photoCaption{font-size:.85rem}.foot-links{flex-wrap:wrap}}
 </style>
 </head>
 <body>
 
-<div id="intro" aria-hidden="true"><div class="mark"><img class="brand-image" src="images/bedrock-civil-logo.webp" alt="Bedrock Civil" width="96" height="96"></div></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-digger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="15" width="12" height="5" rx="2.5"/><path d="M4 15v-4h6l2 4M10 11V7l6-3 5 6-2 2"/><path d="m19 12-1 3h3z"/></symbol>
+  <symbol id="i-cone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5L20 20H4z"/><path d="M3 21h18M7.5 13h9M8.8 8.5h6.4"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V12h2.8v10H14V12h2.8l.4-3.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.6 1.5V6.7a4.7 4.7 0 0 1-4.6-4.7z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="4" width="5" height="16"/><rect x="14" y="4" width="5" height="16"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></symbol>
+</svg>
 
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#top"><img class="brand-image" src="images/bedrock-civil-logo.webp" alt="Bedrock Civil" width="96" height="96"><span class="brand-name">Bedrock Civil</span></a>
-    <ul class="nav-links">
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Bedrock Civil home">
+      <img src="img/logo.png" alt="Bedrock Civil" width="1200" height="889">
+    </a>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Our work</a></li>
       <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-phone" href="tel:+64277772713">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-      027 777 2713
-    </a>
-    <button id="navToggle" aria-label="Open menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-    </button>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-call" href="tel:+64277772713"><svg class="icon"><use href="#i-phone"/></svg><span class="label">027 777 2713</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
   </div>
-  <nav id="mobileMenu">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-    <a href="tel:+64277772713">Call 027 777 2713</a>
-  </nav>
 </header>
 
 <main id="top">
 
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-slides" aria-hidden="true">
-    <div class="hero-slide on"><img src="images/project-01.webp" alt="Tiered timber retaining walls by Bedrock Civil" fetchpriority="high"></div>
-    <div class="hero-slide"><img src="images/project-04.webp" alt="Landscaped beds beside a new home by Bedrock Civil" loading="lazy"></div>
-    <div class="hero-slide"><img src="images/project-12.webp" alt="Timber access ramp and handrails by Bedrock Civil" loading="lazy"></div>
+<section class="hero" id="hero" aria-label="Introduction">
+  <div class="hero-slides" id="heroSlides">
+    <img class="active" src="img/hero-1-1920.webp" srcset="img/hero-1-1080.webp 1080w, img/hero-1-1920.webp 1920w, img/hero-1-3840.webp 3840w" sizes="100vw" alt="Long timber retaining wall built by Bedrock Civil on a Kāpiti section" width="1920" height="1440" fetchpriority="high">
+    <img src="img/hero-2-1920.webp" srcset="img/hero-2-1080.webp 1080w, img/hero-2-1920.webp 1920w, img/hero-2-3840.webp 3840w" sizes="100vw" alt="Gravel building platform prepared on a rural Kāpiti section" width="1920" height="1440" loading="lazy">
+    <img src="img/hero-3-1920.webp" srcset="img/hero-3-1080.webp 1080w, img/hero-3-1920.webp 1920w, img/hero-3-3840.webp 3840w" sizes="100vw" alt="Finished timber garden beds and gravel outside a new build home" width="1920" height="1440" loading="lazy">
+    <img src="img/hero-4-1920.webp" srcset="img/hero-4-1080.webp 1080w, img/hero-4-1920.webp 1920w, img/hero-4-3840.webp 3840w" sizes="100vw" alt="Backyard levelled and retained with fresh topsoil" width="1920" height="1440" loading="lazy">
   </div>
-  <div class="hero-scrim" aria-hidden="true"></div>
-  <div class="wrap hero-inner">
-    <p class="hero-eyebrow">Paraparaumu · Kāpiti Coast</p>
-    <h1>Earthworks, drainage and retaining across the Kāpiti Coast.</h1>
-    <p class="hero-sub">Site cuts, trenches, driveways and retaining, done once and done properly. Based in Paraparaumu, working the whole coast.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-solid" href="tel:+64277772713">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-        Call 027 777 2713
-      </a>
-      <a class="btn btn-ghost" href="#contact">Get a quote</a>
-    </div>
-    <div class="hero-quote">
-      <div class="hq-stars" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+  <div class="wrap">
+    <span class="eyebrow hero-fade">Paraparaumu · Kāpiti Coast</span>
+    <h1>
+      <span class="line"><span>Earthworks</span></span>
+      <span class="line"><span>&amp; civil works,</span></span>
+      <span class="line"><span class="hl">Kāpiti Coast.</span></span>
+    </h1>
+    <div class="hero-bottom hero-fade">
+      <div>
+        <p class="lead">Retaining walls, earthworks, drainage and landscaping structures for homes and sections across Paraparaumu and the Kāpiti Coast. You deal with Art, the owner, from quote to finished job.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+64277772713"><svg class="icon"><use href="#i-phone"/></svg>Call 027 777 2713</a>
+          <a class="btn btn-ghost" href="#contact">Get a quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
       </div>
-      <div class="hq-body" id="hqBody"></div>
-      <p class="hq-tag">Example reviews</p>
+      <div class="rating" aria-label="Rated 5.0 on Google">
+        <span class="num">5.0</span>
+        <div><span class="stars" aria-hidden="true">★★★★★</span><small>Rated 5.0 on Google</small></div>
+      </div>
+    </div>
+    <div class="hero-controls hero-fade">
+      <button class="slide-toggle" id="slideToggle" aria-label="Pause slideshow" aria-pressed="false">
+        <svg id="slideToggleIcon"><use href="#i-pause"/></svg>
+      </button>
+      <div class="slide-dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div>
     </div>
   </div>
 </section>
 
+<!-- TRUST STRIP -->
+<section class="trust" aria-label="Why choose us">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><svg class="icon"><use href="#i-pin"/></svg><div><strong>Kāpiti Coast based</strong><span>Paraparaumu local, working across the coast.</span></div></div>
+    <div class="trust-item"><svg class="icon"><use href="#i-digger"/></svg><div><strong>Owner operated</strong><span>Art quotes the job and runs the machine.</span></div></div>
+    <div class="trust-item"><svg class="icon"><use href="#i-quote"/></svg><div><strong>Straight quotes</strong><span>Priced clearly before the work starts.</span></div></div>
+  </div>
+</section>
+
 <!-- SERVICES -->
-<section id="services">
+<section id="services" class="band-dark">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>What we dig, drain and build</h2>
-      <p>The groundwork that decides whether everything above it behaves. One call covers the lot.</p>
+    <div class="section-head">
+      <div><span class="eyebrow reveal">What we do</span><h2 class="reveal">Dirt moved, sites sorted</h2></div>
+      <p class="muted reveal">From first cut to final level. Not sure if your job fits? Ring Art and ask.</p>
     </div>
-    <div class="svc-grid">
-      <article class="svc-card reveal">
-        <figure><img src="images/project-09.webp" alt="Excavator clearing a residential section by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
-        <div class="svc-body">
-          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V9l7-5 9 6v10"/></svg>Groundwork</span>
-          <h3>Earthworks and site cuts</h3>
-          <p>Building platforms, cut and fill, and final trim ready for the builder to start on solid ground.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <figure><img src="images/project-02.webp" alt="Excavation beside a house by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
-        <div class="svc-body">
-          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4.5 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-6.5 6-11z"/></svg>Water</span>
-          <h3>Trenching and drainage</h3>
-          <p>Stormwater, field drains and service trenches that move water where it should go, not into your house.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <figure><img src="images/project-05.webp" alt="Retaining walls and prepared ground by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
-        <div class="svc-body">
-          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="10" rx="1"/><path d="M7 10V6h10v4"/></svg>Foundations</span>
-          <h3>Foundation digs and footings</h3>
-          <p>Accurate digs to the engineer's levels, with spoil carted off and the site left ready to pour.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <figure><img src="images/project-08.webp" alt="Retaining wall beside a driveway by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
-        <div class="svc-body">
-          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21l4-18"/><path d="M20 21L16 3"/><path d="M12 7v2"/><path d="M12 13v2"/><path d="M12 19v2"/></svg>Access</span>
-          <h3>Driveways and metalling</h3>
-          <p>Formed, compacted and metalled driveways and farm tracks that hold their shape through winter.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <figure><img src="images/project-06.webp" alt="Gravel landscaping with timber edging by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
-        <div class="svc-body">
-          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M6 17l3-8 4 5 3-4 2 7"/></svg>Sections</span>
-          <h3>Section clearing and levelling</h3>
-          <p>Vegetation out, levels sorted and Kāpiti's sandy ground compacted so your project starts clean.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <figure><img src="images/project-01.webp" alt="Tiered timber retaining walls by Bedrock Civil" loading="lazy" width="900" height="506"></figure>
-        <div class="svc-body">
-          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="6" rx="1"/><rect x="13" y="4" width="8" height="6" rx="1"/><rect x="8" y="14" width="8" height="6" rx="1"/></svg>Slopes</span>
-          <h3>Retaining and rock work</h3>
-          <p>Retaining prep, rock placement and batter shaping that keeps sloped sections where they belong.</p>
-        </div>
-      </article>
+    <div class="tiles">
+      <a href="#contact" class="tile wide wipe"><img src="img/svc-retaining-1920.webp" alt="Timber retaining wall under construction on a site cut" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">01</span><h3>Retaining walls</h3><p>Timber retaining built straight and built to last, from garden walls to full site retains.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/svc-earthworks-1920.webp" alt="Retained bed cut, boxed and filled with fresh topsoil" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">02</span><h3>Earthworks &amp; site prep</h3><p>Cut and fill, levelling and platforms prepped ready to build on.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/svc-drainage-1920.webp" alt="Gravel soakage drainage built beside a path" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">03</span><h3>Drainage &amp; gravel</h3><p>Stormwater, soakage and gravel surfaces that keep water moving.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/svc-steps-1920.webp" alt="New timber steps built beside a house" width="1440" height="1920" loading="lazy"><div class="tile-body"><span class="num">04</span><h3>Timber steps &amp; landscaping</h3><p>Steps, boardwalks and garden beds that tie a section together.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/svc-clearing-1920.webp" alt="Excavator removing a tree stump" width="1440" height="1920" loading="lazy"><div class="tile-body"><span class="num">05</span><h3>Section clearing &amp; stumps</h3><p>Trees, stumps, scrub and spoil gone so your project can start.</p></div></a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="band-light">
   <div class="wrap about-grid">
-    <div class="about-photo reveal">
-      <img src="images/project-09.webp" alt="Excavator clearing a residential section by Bedrock Civil" loading="lazy" width="1000" height="750">
-      <span class="about-tag">Paraparaumu based</span>
+    <div class="about-img wipe-up">
+      <img src="img/about-1920.webp" alt="Timber steps built down a hillside overlooking Paraparaumu" width="1440" height="1920" loading="lazy">
+      <div class="corner-tag">Locally<br>owned</div>
     </div>
-    <div class="about-copy reveal">
-      <h2>Ground you can build on, from a local you can ring</h2>
-      <p>Bedrock Civil is run by Art out of Paraparaumu. You deal with the person who quotes the job, drives the digger and answers the phone when something changes.</p>
-      <p>Coastal sections have their own habits: sand that moves, water that finds the low point, access that gets tight. We plan for that before the first bucket goes in, so the job finishes when and where the quote said it would.</p>
-      <ul class="about-list">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Based in Paraparaumu, working Kāpiti and the wider Wellington region</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Quotes in writing before any machine turns up</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Sites left tidy, spoil carted away, neighbours still talking to you</li>
+    <div>
+      <span class="eyebrow reveal">About us</span>
+      <h2 class="reveal">Solid work, from the ground up</h2>
+      <p class="muted reveal">Bedrock Civil is a Paraparaumu earthworks company run by Arthur (Art) Woodman. Art handles the quote, runs the machine and answers the phone, so nothing gets lost between the office and the site.</p>
+      <p class="muted reveal">From retaining walls and site cuts to drainage, steps and section clearing, homeowners and builders across the Kāpiti Coast call Bedrock when they want the groundwork done properly the first time.</p>
+      <ul class="checklist reveal">
+        <li><svg class="icon"><use href="#i-check"/></svg>Locally owned and operated</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>You deal with the owner on every job</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Tidy sites and clear quotes</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="projects"><div class="wrap"><div class="sec-head reveal"><p class="project-eyebrow">Our work</p><h2>From the first cut to the finishing touches.</h2><p>Retaining walls, earthworks, timber steps and outdoor spaces. Explore 15 photos of Bedrock Civil’s work.</p></div><div class="project-grid"><figure class="project-card reveal"><a href="images/project-01.webp" class="project-link" data-project="0" aria-label="View photo 1: Tiered timber retaining walls"><img src="images/project-01-thumb.webp" alt="Tiered timber retaining walls by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>01</span>Tiered timber retaining walls</figcaption></figure><figure class="project-card reveal"><a href="images/project-02.webp" class="project-link" data-project="1" aria-label="View photo 2: Excavation beside a house"><img src="images/project-02-thumb.webp" alt="Excavation beside a house by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>02</span>Excavation beside a house</figcaption></figure><figure class="project-card reveal"><a href="images/project-03.webp" class="project-link" data-project="2" aria-label="View photo 3: Timber seating around a gravel courtyard"><img src="images/project-03-thumb.webp" alt="Timber seating around a gravel courtyard by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>03</span>Timber seating around a gravel courtyard</figcaption></figure><figure class="project-card reveal"><a href="images/project-04.webp" class="project-link" data-project="3" aria-label="View photo 4: Landscaped beds beside a new home"><img src="images/project-04-thumb.webp" alt="Landscaped beds beside a new home by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>04</span>Landscaped beds beside a new home</figcaption></figure><figure class="project-card reveal"><a href="images/project-05.webp" class="project-link" data-project="4" aria-label="View photo 5: Retaining walls and prepared ground"><img src="images/project-05-thumb.webp" alt="Retaining walls and prepared ground by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>05</span>Retaining walls and prepared ground</figcaption></figure><figure class="project-card reveal"><a href="images/project-06.webp" class="project-link" data-project="5" aria-label="View photo 6: Gravel landscaping with timber edging"><img src="images/project-06-thumb.webp" alt="Gravel landscaping with timber edging by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>06</span>Gravel landscaping with timber edging</figcaption></figure><figure class="project-card reveal"><a href="images/project-07.webp" class="project-link" data-project="6" aria-label="View photo 7: Timber-framed gravel garden path"><img src="images/project-07-thumb.webp" alt="Timber-framed gravel garden path by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>07</span>Timber-framed gravel garden path</figcaption></figure><figure class="project-card reveal"><a href="images/project-08.webp" class="project-link" data-project="7" aria-label="View photo 8: Retaining wall beside a driveway"><img src="images/project-08-thumb.webp" alt="Retaining wall beside a driveway by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>08</span>Retaining wall beside a driveway</figcaption></figure><figure class="project-card reveal"><a href="images/project-09.webp" class="project-link" data-project="8" aria-label="View photo 9: Excavator clearing a residential section"><img src="images/project-09-thumb.webp" alt="Excavator clearing a residential section by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>09</span>Excavator clearing a residential section</figcaption></figure><figure class="project-card reveal"><a href="images/project-10.webp" class="project-link" data-project="9" aria-label="View photo 10: Wide timber entrance steps"><img src="images/project-10-thumb.webp" alt="Wide timber entrance steps by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>10</span>Wide timber entrance steps</figcaption></figure><figure class="project-card reveal"><a href="images/project-11.webp" class="project-link" data-project="10" aria-label="View photo 11: Completed driveway retaining wall"><img src="images/project-11-thumb.webp" alt="Completed driveway retaining wall by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>11</span>Completed driveway retaining wall</figcaption></figure><figure class="project-card reveal"><a href="images/project-12.webp" class="project-link" data-project="11" aria-label="View photo 12: Timber access ramp and handrails"><img src="images/project-12-thumb.webp" alt="Timber access ramp and handrails by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>12</span>Timber access ramp and handrails</figcaption></figure><figure class="project-card reveal"><a href="images/project-13.webp" class="project-link" data-project="12" aria-label="View photo 13: Garden steps beside a boundary fence"><img src="images/project-13-thumb.webp" alt="Garden steps beside a boundary fence by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>13</span>Garden steps beside a boundary fence</figcaption></figure><figure class="project-card reveal"><a href="images/project-14.webp" class="project-link" data-project="13" aria-label="View photo 14: Timber stairway alongside a house"><img src="images/project-14-thumb.webp" alt="Timber stairway alongside a house by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>14</span>Timber stairway alongside a house</figcaption></figure><figure class="project-card reveal"><a href="images/project-15.webp" class="project-link" data-project="14" aria-label="View photo 15: Timber steps and landing through a garden"><img src="images/project-15-thumb.webp" alt="Timber steps and landing through a garden by Bedrock Civil" loading="lazy" width="720" height="540"><span class="project-open" aria-hidden="true">View photo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></a><figcaption><span>15</span>Timber steps and landing through a garden</figcaption></figure></div></div></section>
-<!-- CREW -->
-<section id="crew" class="dark">
+<!-- STATS BAND -->
+<section class="parallax" aria-label="At a glance">
+  <div class="bg" id="parallaxBg"></div>
   <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>Who turns up</h2>
-      <p>Small crew, short chain of command. The person you call is the person on the job.</p>
-      <span class="badge">Example team</span>
+    <div class="stats">
+      <div class="stat reveal"><div class="n">5.0<em>★</em></div><p>Google rating</p></div>
+      <div class="stat reveal"><div class="n">7–5</div><p>On the tools Mon–Fri</p></div>
+      <div class="stat reveal"><div class="n">100<em>%</em></div><p>Owner operated</p></div>
     </div>
-    <div class="crew-grid">
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">A</div>
-        <h3>Art</h3>
-        <p class="crew-role">Owner / Operator</p>
-        <p>Quotes every job himself and runs the digger on most of them. Your first and last point of contact.</p>
-      </article>
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">SL</div>
-        <h3>Site Lead</h3>
-        <p class="crew-role">Setout and levels</p>
-        <p>Keeps the bigger jobs on programme: levels checked, trucks sequenced, no one standing around.</p>
-      </article>
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">OP</div>
-        <h3>Operator</h3>
-        <p class="crew-role">Machines and trim</p>
-        <p>On the tools for trenching, backfill and final trim, so the finish matches the plan.</p>
-      </article>
+  </div>
+</section>
+
+<!-- RECENT WORK (masonry gallery, real photos) -->
+<section id="work" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Our work</span><h2 class="reveal">Straight off the site</h2></div>
+      <p class="muted reveal">Real jobs by Bedrock Civil around the Kāpiti Coast.</p>
+    </div>
+    <div class="masonry">
+      <figure class="wipe-up"><img src="img/gal-1-1920.webp" alt="Timber garden beds edged with gravel" width="1440" height="1920" loading="lazy"><figcaption>Garden beds &amp; gravel</figcaption></figure>
+      <figure class="wipe-up"><img src="img/gal-2-1920.webp" alt="Timber boardwalk and ramp over a bank" width="1920" height="1440" loading="lazy"><figcaption>Boardwalk &amp; ramp</figcaption></figure>
+      <figure class="wipe-up"><img src="img/gal-3-1920.webp" alt="Timber steps alongside a house" width="1440" height="1920" loading="lazy"><figcaption>Timber steps</figcaption></figure>
+      <figure class="wipe-up"><img src="img/gal-4-1920.webp" alt="Felled tree being cleared, seen from the digger cab" width="1440" height="1920" loading="lazy"><figcaption>Tree &amp; stump removal</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="band-light">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Who you deal with</span><h2 class="reveal">One owner, one standard</h2></div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal"><div class="avatar">AW</div><h3>Arthur (Art) Woodman — Owner / Operator</h3><p>Art prices every job, runs the machine and is the one who picks up when you call. No call centre, no middleman.</p></div>
+      <div class="team-card cta-card reveal"><h3>Got a job for Art?</h3><p>Send through the address and what you need done, and he'll come take a look.</p><a class="btn btn-primary" href="#contact">Get in touch <svg class="icon"><use href="#i-arrow"/></svg></a></div>
     </div>
   </div>
 </section>
 
 <!-- REVIEWS -->
-<section id="reviews">
+<section id="reviews" class="band-dark">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>What locals say</h2>
-      <p>Example reviews shown while Bedrock Civil's Google profile builds up. The link below goes straight to Google.</p>
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Google reviews</span><h2 class="reveal">What clients say</h2></div>
     </div>
-    <div class="rev-grid">
-      <article class="rev-card reveal">
-        <div class="rev-stars" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        </div>
-        <blockquote>"Art cut and metalled our long driveway in two days. First heavy rain since and the water runs to the swale, not the garage."</blockquote>
-        <cite>Steve M. <span>Waikanae · Example review</span></cite>
-      </article>
-      <article class="rev-card reveal">
-        <div class="rev-stars" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        </div>
-        <blockquote>"Retaining cut behind our place went in straight and solid. Site was tidy every evening and the spoil was gone by the weekend."</blockquote>
-        <cite>Hannah T. <span>Raumati Beach · Example review</span></cite>
-      </article>
-      <article class="rev-card reveal">
-        <div class="rev-stars" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        </div>
-        <blockquote>"Levelled our Ōtaki section and put the culvert in exactly as quoted. No surprises on the invoice either."</blockquote>
-        <cite>Mike and Carol P. <span>Ōtaki · Example review</span></cite>
-      </article>
-    </div>
-    <div class="rev-actions reveal">
-      <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Bedrock+Civil+Paraparaumu" target="_blank" rel="noopener">
-        See all our Google reviews
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
-      </a>
+    <div class="reviews-grid">
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Arthur is super to deal with would 100% recommend!"</p><footer><strong>Shana Corkill</strong>Google review</footer></article>
+      <div class="review-side reveal">
+        <span class="big">5.0 <span class="stars" aria-hidden="true">★★★★★</span></span>
+        <p class="muted" style="margin:0">Bedrock Civil's rating on Google.</p>
+        <a class="btn btn-ghost" href="https://www.google.com/maps?cid=10451173524519225207" target="_blank" rel="noopener">See all Google reviews <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- REVIEW BANNER -->
-<section id="leave-review">
-  <div class="bg" aria-hidden="true"><img src="images/project-04.webp" alt="Landscaped beds beside a new home by Bedrock Civil" loading="lazy"></div>
-  <div class="wrap banner-inner">
-    <div class="reveal">
-      <h2>Happy with our work? Leave us a review</h2>
-      <p>A quick review on Google helps other Kāpiti locals find us. It takes about a minute.</p>
+<!-- LEAVE A REVIEW -->
+<section class="review-banner" aria-label="Leave a review">
+  <div class="wrap">
+    <div><h2>Happy with the work? Leave us a review</h2><p>It helps other Kāpiti locals find a good operator.</p></div>
+    <a class="btn" href="https://www.google.com/maps?cid=10451173524519225207" target="_blank" rel="noopener">Leave a Google review</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="band-light">
+  <div class="wrap faq-grid">
+    <div><span class="eyebrow reveal">FAQ</span><h2 class="reveal">Before you call</h2><p class="muted reveal">Still unsure? Ring Art and ask — it costs nothing.</p></div>
+    <div class="faq-list reveal">
+      <details><summary>What areas do you cover?</summary><p>Bedrock Civil is based in Paraparaumu and works across the Kāpiti Coast. Outside the area? Give Art a call and ask — it depends on the job.</p></details>
+      <details><summary>How do I get a quote?</summary><p>Call or email with the address and what you need done. Art will come and look at the site, then give you a clear price before any work starts.</p></details>
+      <details><summary>Do I need a consent for earthworks?</summary><p>Some jobs do, depending on the scale and your site. Mention what you're planning when you call and Art can tell you what applies.</p></details>
+      <details><summary>What should I do before work starts?</summary><p>Mark out any known underground services (power, water, septic) and make sure there's access for machinery. Art will confirm the details with you before day one.</p></details>
+      <details><summary>What happens after I accept the quote?</summary><p>You lock in a start date, confirm access, and Art keeps you in the loop through the job — you're dealing with the same person the whole way.</p></details>
     </div>
-    <a class="btn btn-solid reveal" href="https://www.google.com/maps/search/?api=1&query=Bedrock+Civil+Paraparaumu" target="_blank" rel="noopener">
-      Leave a Google review
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
-    </a>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <div class="wrap">
-    <div class="contact-card reveal">
-      <div class="contact-map">
-        <iframe title="Map showing Bedrock Civil, Paraparaumu" src="https://www.google.com/maps?q=Bedrock+Civil+Paraparaumu+Wellington+New+Zealand&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow reveal">Contact</span>
+      <h2 class="reveal">Got a site that needs work?</h2>
+      <p class="muted reveal">Call Art for a quote or email through the details of the job.</p>
+      <ul class="contact-rows reveal">
+        <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+64277772713">027 777 2713</a></li>
+        <li><svg class="icon"><use href="#i-mail"/></svg><span id="emailText">art [at] bedrockcivil.nz</span></li>
+        <li><svg class="icon"><use href="#i-pin"/></svg><span>44 Ihakara Street, Paraparaumu</span></li>
+        <li><svg class="icon"><use href="#i-clock"/></svg><span>Mon–Fri 7am–5pm</span></li>
+      </ul>
+      <div class="socials reveal">
+        <a href="https://www.instagram.com/explore/search/keyword/?q=Bedrock%20Civil" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        <a href="https://www.facebook.com/search/top?q=Bedrock%20Civil%20Paraparaumu" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+        <a href="https://www.tiktok.com/search?q=Bedrock%20Civil" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
       </div>
-      <div class="contact-info">
-        <h2>Talk to Art about your section</h2>
-        <p>Ring for a straight answer, or send the details and photos of your site for a quote.</p>
-        <div class="contact-btns">
-          <a class="btn btn-solid" href="tel:+64277772713">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-            Call Bedrock Civil
-          </a>
-          <a class="btn btn-ghost" href="#" data-gmail data-user="art" data-domain="bedrockcivil.nz" data-su="Quote%20request%20from%20the%20website">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
-            Email Bedrock Civil
-          </a>
-        </div>
-        <div class="c-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-          <a href="tel:+64277772713">027 777 2713</a>
-        </div>
-        <div class="c-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
-          <a href="#" data-gmail data-user="art" data-domain="bedrockcivil.nz" data-su="Quote%20request%20from%20the%20website"><span data-email-text data-user="art" data-domain="bedrockcivil.nz"></span></a>
-        </div>
-        <div class="c-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Paraparaumu, Kāpiti Coast</span>
-        </div>
-        <div class="c-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <span>On site weekdays. Call or email any time.</span>
-        </div>
-        <div class="socials">
-          <a href="https://www.facebook.com/search/top?q=Bedrock%20Civil%20Paraparaumu" target="_blank" rel="noopener" aria-label="Find Bedrock Civil on Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.3-.04-1.3-.12-2.45-.12-2.4 0-4.05 1.46-4.05 4.15v2.27H7.5V14h2.7v8z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=Bedrock%20Civil" target="_blank" rel="noopener" aria-label="Find Bedrock Civil on Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>
-          </a>
-        </div>
-      </div>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn-primary reveal" href="tel:+64277772713">Call for a quote <svg class="icon"><use href="#i-phone"/></svg></a>
+      <a class="btn btn-ghost reveal" href="#" data-gmail data-user="art" data-domain="bedrockcivil.nz" data-su="Earthworks%20enquiry" data-body="Hi%20Art%2C%0A%0AI'd%20like%20a%20quote%20for%3A%0A%0ASite%20address%3A%0A%0AThanks">Email us the job <svg class="icon"><use href="#i-mail"/></svg></a>
     </div>
   </div>
 </section>
 
+<!-- MAP -->
+<section class="map" aria-label="Map">
+  <iframe title="Map to Bedrock Civil, 44 Ihakara Street, Paraparaumu" src="https://www.google.com/maps?q=Bedrock+Civil,+44+Ihakara+Street,+Paraparaumu+5032,+New+Zealand&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
 </main>
 
-<footer>
-  <div class="wrap foot">
-    <a class="logo" href="#top"><img class="brand-image" src="images/bedrock-civil-logo.webp" alt="Bedrock Civil" width="96" height="96"></a>
-    <nav class="foot-links">
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
-    <div class="foot-social">
-      <a href="https://www.facebook.com/search/top?q=Bedrock%20Civil%20Paraparaumu" target="_blank" rel="noopener" aria-label="Find Bedrock Civil on Facebook">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.3-.04-1.3-.12-2.45-.12-2.4 0-4.05 1.46-4.05 4.15v2.27H7.5V14h2.7v8z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/explore/search/keyword/?q=Bedrock%20Civil" target="_blank" rel="noopener" aria-label="Find Bedrock Civil on Instagram">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>
-      </a>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <span class="footer-logo"><img src="img/logo.png" alt="Bedrock Civil" width="1200" height="889"></span>
+    <span>© <span id="year">2026</span> Bedrock Civil · Paraparaumu, Kāpiti Coast</span>
+    <div class="footer-links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.google.com/maps?cid=10451173524519225207" target="_blank" rel="noopener">Leave a review</a>
     </div>
-    <p class="foot-note">© <span id="yr">2026</span> Bedrock Civil, Paraparaumu. Earthworks and drainage across the Kāpiti Coast.</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/explore/search/keyword/?q=Bedrock%20Civil" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+      <a href="https://www.facebook.com/search/top?q=Bedrock%20Civil%20Paraparaumu" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+      <a href="https://www.tiktok.com/search?q=Bedrock%20Civil" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
+    </div>
   </div>
 </footer>
 
-<dialog id="projectViewer" aria-label="Project photo viewer"><div class="viewer-bar"><p id="photoCount"></p><button type="button" id="closeViewer" aria-label="Close photo viewer">Close <span aria-hidden="true">×</span></button></div><div class="viewer-stage"><img id="viewerImage" alt=""><button type="button" id="previousPhoto" aria-label="Previous photo">‹</button><button type="button" id="nextPhoto" aria-label="Next photo">›</button></div><p id="photoCaption"></p></dialog>
 <script>
-(function(){
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // intro overlay
-  var intro = document.getElementById('intro');
-  function killIntro(){ intro.classList.add('gone'); document.body.classList.add('loaded'); }
-  if (reduced) { killIntro(); }
-  else { window.setTimeout(killIntro, 1100); }
+// Mobile menu
+var burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
 
+// Nav shrinks on scroll + parallax band
+var nav=document.getElementById('nav'),pbg=document.getElementById('parallaxBg'),ticking=false;
+function onScroll(){
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  if(!reduce&&pbg){var r=pbg.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){pbg.style.transform='translate3d(0,'+((r.top-innerHeight/2)*-0.18)+'px,0)';}}
+  ticking=false;
+}
+window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(onScroll);ticking=true;}},{passive:true});
+onScroll();
 
-  var projectNames = ["Tiered timber retaining walls", "Excavation beside a house", "Timber seating around a gravel courtyard", "Landscaped beds beside a new home", "Retaining walls and prepared ground", "Gravel landscaping with timber edging", "Timber-framed gravel garden path", "Retaining wall beside a driveway", "Excavator clearing a residential section", "Wide timber entrance steps", "Completed driveway retaining wall", "Timber access ramp and handrails", "Garden steps beside a boundary fence", "Timber stairway alongside a house", "Timber steps and landing through a garden"];
-  var viewer=document.getElementById('projectViewer'), viewerImage=document.getElementById('viewerImage'), selectedPhoto=0;
-  function showPhoto(index){selectedPhoto=(index+projectNames.length)%projectNames.length;viewerImage.src='images/project-'+String(selectedPhoto+1).padStart(2,'0')+'.webp';viewerImage.alt=projectNames[selectedPhoto]+' by Bedrock Civil';document.getElementById('photoCount').textContent=String(selectedPhoto+1).padStart(2,'0')+' / '+projectNames.length;document.getElementById('photoCaption').textContent=projectNames[selectedPhoto];}
-  document.querySelectorAll('.project-link').forEach(function(a){a.addEventListener('click',function(e){if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();showPhoto(Number(a.dataset.project));viewer.showModal();document.body.style.overflow='hidden';});});
-  document.getElementById('closeViewer').addEventListener('click',function(){viewer.close();});
-  viewer.addEventListener('close',function(){document.body.style.overflow='';});
-  viewer.addEventListener('click',function(e){if(e.target===viewer)viewer.close();});
-  document.getElementById('previousPhoto').addEventListener('click',function(){showPhoto(selectedPhoto-1);});
-  document.getElementById('nextPhoto').addEventListener('click',function(){showPhoto(selectedPhoto+1);});
-  viewer.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();showPhoto(selectedPhoto+1);}if(e.key==='ArrowLeft'){e.preventDefault();showPhoto(selectedPhoto-1);}});
-
-  // year
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // mobile nav
-  var toggle = document.getElementById('navToggle');
-  var menu = document.getElementById('mobileMenu');
-  toggle.addEventListener('click', function(){
-    var open = menu.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+// Hero Ken Burns crossfade with accessible pause/play
+var hero=document.getElementById('hero'),slides=document.querySelectorAll('#heroSlides img'),dots=document.querySelectorAll('#dots span'),cur=0,timer=null;
+var toggleBtn=document.getElementById('slideToggle'),toggleIcon=document.getElementById('slideToggleIcon');
+function nextSlide(){
+  slides[cur].classList.remove('active');dots[cur].classList.remove('on');
+  cur=(cur+1)%slides.length;
+  void slides[cur].offsetWidth;
+  slides[cur].classList.add('active');dots[cur].classList.add('on');
+}
+function startShow(){if(timer===null&&slides.length>1){timer=setInterval(nextSlide,6000);}}
+function stopShow(){if(timer!==null){clearInterval(timer);timer=null;}}
+if(reduce){
+  toggleBtn.style.display='none';
+}else{
+  startShow();
+  toggleBtn.addEventListener('click',function(){
+    var paused=timer===null;
+    if(paused){startShow();hero.classList.remove('paused');toggleIcon.innerHTML='<use href="#i-pause"/>';toggleBtn.setAttribute('aria-label','Pause slideshow');toggleBtn.setAttribute('aria-pressed','false');}
+    else{stopShow();hero.classList.add('paused');toggleIcon.innerHTML='<use href="#i-play"/>';toggleBtn.setAttribute('aria-label','Play slideshow');toggleBtn.setAttribute('aria-pressed','true');}
   });
-  menu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){ menu.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); });
-  });
+}
 
-  // hero rotation (lazy-load non-first slides)
-  var slides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
-  slides.forEach(function(s){
-    var img = s.querySelector('img[data-src]');
-    if (img) { img.src = img.getAttribute('data-src'); img.removeAttribute('data-src'); }
-  });
-  if (!reduced && slides.length > 1) {
-    var cur = 0;
-    window.setInterval(function(){
-      slides[cur].classList.remove('on');
-      cur = (cur + 1) % slides.length;
-      slides[cur].classList.add('on');
-    }, 6000);
-  }
+// Scroll reveals: staggered within each parent
+var targets=document.querySelectorAll('.reveal,.wipe,.wipe-up');
+if('IntersectionObserver' in window&&!reduce){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,sibs=Array.prototype.filter.call(el.parentElement.children,function(c){return c.matches('.reveal,.wipe,.wipe-up');});
+      var d=(Math.max(0,sibs.indexOf(el))*0.1)+'s',img=el.querySelector(':scope>img');
+      if(img){img.style.transitionDelay=d+',0s';img.addEventListener('transitionend',function(){img.style.transitionDelay='';},{once:true});}
+      else{el.style.transitionDelay=d;}
+      el.classList.add('in');
+      io.unobserve(el);
+    });
+  },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  targets.forEach(function(el){io.observe(el);});
+}else{
+  targets.forEach(function(el){el.classList.add('in');});
+}
 
-  // rotating hero review quotes (same data as review cards)
-  var quotes = [
-    { q: '"Art cut and metalled our long driveway in two days. Water runs to the swale now, not the garage."', by: 'Steve M., Waikanae' },
-    { q: '"Retaining cut went in straight and solid. Tidy site every evening, spoil gone by the weekend."', by: 'Hannah T., Raumati Beach' },
-    { q: '"Levelled our section and put the culvert in exactly as quoted. No surprises on the invoice."', by: 'Mike and Carol P., Ōtaki' }
-  ];
-  var hq = document.getElementById('hqBody');
-  quotes.forEach(function(item, i){
-    var d = document.createElement('div');
-    d.className = 'hq-item' + (i === 0 ? ' on' : '');
-    var p = document.createElement('p'); p.textContent = item.q;
-    var c = document.createElement('cite'); c.textContent = item.by;
-    d.appendChild(p); d.appendChild(c); hq.appendChild(d);
-  });
-  if (!reduced && quotes.length > 1) {
-    var qi = 0;
-    var items = hq.querySelectorAll('.hq-item');
-    window.setInterval(function(){
-      items[qi].classList.remove('on');
-      qi = (qi + 1) % items.length;
-      items[qi].classList.add('on');
-    }, 6000);
-  }
+// Gmail compose links (email built in JS so Cloudflare can't rewrite it)
+document.querySelectorAll('a[data-gmail]').forEach(function(a){var to=a.getAttribute('data-user')+'@'+a.getAttribute('data-domain');a.href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(to)+'&su='+(a.getAttribute('data-su')||'')+'&body='+(a.getAttribute('data-body')||'');a.target='_blank';a.rel='noopener';});
+var et=document.getElementById('emailText');if(et)et.textContent='art'+'@'+'bedrockcivil.nz';
 
-  // scroll reveals
-  var revealEls = document.querySelectorAll('.reveal');
-  if (reduced || !('IntersectionObserver' in window)) {
-    revealEls.forEach(function(el){ el.classList.add('in'); });
-  } else {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(function(el){ io.observe(el); });
-  }
-
-  // gmail compose buttons (address built from parts)
-  document.querySelectorAll('a[data-gmail]').forEach(function(a){
-    var to = a.getAttribute('data-user') + '@' + a.getAttribute('data-domain');
-    a.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + (a.getAttribute('data-su') || '') + '&body=' + (a.getAttribute('data-body') || '');
-    a.target = '_blank'; a.rel = 'noopener';
-  });
-  document.querySelectorAll('[data-email-text]').forEach(function(s){
-    s.textContent = s.getAttribute('data-user') + '@' + s.getAttribute('data-domain');
-  });
-})();
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
